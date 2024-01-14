@@ -67,6 +67,15 @@ nav {
     font-size: 1rem;
     margin-top: 0;
 }
+.influencer-content .btn {
+    padding: 10px 24px;
+    border-radius: 40px;
+    background-color: #E02C6D;;
+}
+.influencer-content img {
+    width: 24px;
+    height: 24px;
+}
 .influencer-img {
     width: 440px;
     height: 500px;
@@ -165,3 +174,43 @@ main {
 }
 /* features section ends  */
 /* main section styles ends  */ 
+
+.influencer {
+    margin-top: 6rem;
+    width: 1100px;
+    height: 200px;
+    color: #FFF;
+    background-color: #0A0826;
+    text-align: center;
+}
+.influencer h1 {
+    font-size: 1.5rem;
+    padding-top: 2.5rem;
+}
+
+/* Responsive start here  */
+/* For mobile device  */
+@media  screen and (max-width: 576px) {
+     nav,
+     .nav-list,
+     .logo-container,
+     .influencer-container {
+        flex-direction: column;
+     }   
+     nav {
+        justify-content: center;
+        align-items: center;
+     }
+     .logo-container img {
+        padding-top: 20px;
+     }
+     .influencer-container {
+        padding-left: 0;
+        margin-left: 0;
+     }
+     .popular-card {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 0;
+        margin-right: 20rem;
+     }
+}
